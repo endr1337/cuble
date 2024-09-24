@@ -5,9 +5,9 @@
 #include "include/SDL_image.h"
 #include <iostream>
 #include <vector>
-#include <cstdlib> // For rand() and srand()
-#include <ctime>   // For time()
-#include <algorithm> // For std::remove_if
+#include <cstdlib> 
+#include <ctime>  
+#include <algorithm> 
 
 // Function to spawn bullets
 void SpawnBullet(SDL_Renderer* renderer, const Player& player, std::vector<Bullet>& bullets) {
