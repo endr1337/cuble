@@ -21,7 +21,7 @@ void SpawnBullet(SDL_Renderer* renderer, const Player& player, std::vector<Bulle
         return; // Prevent immediate collision
     }
 
-    bullets.emplace_back(renderer, "C:\\Users\\Jackson\\source\\repos\\gmae\\x64\\Debug/textures/bullet.png", startX, startY, 45, 45, player.GetX(), player.GetY());
+    bullets.emplace_back(renderer, "textures/bullet.png", startX, startY, 45, 45, player.GetX(), player.GetY());
 }
 // Function to spawn new platforms
 void SpawnPlatform(std::vector<World>& platforms, float playerX, const Player& player) {
@@ -68,7 +68,7 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    Player player(renderer, "C:\\Users\\Jackson\\source\\repos\\gmae\\x64\\Debug/textures/player.png", 160.0f, 100.0f, 50, 50);
+    Player player(renderer, "/textures/player.png", 160.0f, 100.0f, 50, 50);
 
     srand(static_cast<unsigned>(time(0)));
 
