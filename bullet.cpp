@@ -2,7 +2,7 @@
 #include "include/SDL_image.h"
 #include <iostream>
 #include <cmath>
-
+//i think i need vector???? i really hate this 
 Bullet::Bullet(SDL_Renderer* renderer, const std::string& spriteSheetPath, float startX, float startY, int w, int h, float playerX, float playerY)
     : x(startX), y(startY), width(w), height(h), frameTime(0.1f), frameTimer(0.0f), currentFrame(0), numFrames(4), isDead(false)
 {
@@ -15,7 +15,7 @@ Bullet::Bullet(SDL_Renderer* renderer, const std::string& spriteSheetPath, float
     destRect = { static_cast<int>(x), static_cast<int>(y), width, height };
 
     // Calculate the direction vector towards the player
-    float dx = playerX - x;
+    float dx = playerX - x; 
     float dy = playerY - y;
 
     // Calculate the distance between the bullet and the player
