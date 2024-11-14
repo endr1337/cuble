@@ -117,6 +117,7 @@ int main(int argc, char* argv[]) {
         }
 
         // Update bullets
+       /*
         for (auto it = bullets.begin(); it != bullets.end();) {
             it->Update(deltaTime);
             if (it->IsOffScreen()) {
@@ -131,7 +132,7 @@ int main(int argc, char* argv[]) {
                     ++it;
                 }
             }
-        }
+        }*/
 
         // Render
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
