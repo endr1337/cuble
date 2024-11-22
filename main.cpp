@@ -39,7 +39,7 @@ void SpawnPlatform(std::vector<World>& platforms, float playerX, const Player& p
         platforms.emplace_back(newX, newY, 200, 50, SDL_Color{ r, g, b, 255}); // Adjust platform size and position as needed
     }
 }
-
+//#workhardernotsmarter this is not optimized at all i hate my life so much im going to kill myself :pensive:
 int main(int argc, char* argv[]) {
     SDL_Window* window = nullptr;
     SDL_Renderer* renderer = nullptr;
