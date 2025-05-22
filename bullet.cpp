@@ -82,4 +82,5 @@ void Bullet::Render(SDL_Renderer* renderer) const {
 
 bool Bullet::IsDead() const {
     return isDead;
+  //lwk idk if i even want to keep working on this project tbh 
 }
